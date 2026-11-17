@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capanema em Foco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="logo">
+            <h1>Capanema<span> em Foco</span></h1>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#oportunidades">Oportunidades</a>
+            <a href="#contato">Pesquisa</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="banner" id="inicio">
+            <div class="banner-conteudo">
+                <h2>Descubra novas oportunidades em Capanema!</h2>
+
+                <p>
+                    Conheça as necessidades da população e ajude
+                    a desenvolver o comércio local.
+                </p>
+
+                <a href="#oportunidades" class="botao">
+                    Explorar oportunidades
+                </a>
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre o projeto</h2>
+
+            <p>
+                O Capanema em Foco é um projeto para identificar
+                necessidades dos moradores e possíveis oportunidades
+                de negócios e serviços na cidade.
+            </p>
+        </section>
+
+        <section class="oportunidades" id="oportunidades">
+
+            <h2>Áreas com potencial de oportunidades</h2>
+
+            <div class="container-cards">
+
+                <div class="card">
+                    <img class="imgs" src="lancho.jpg" alt="">
+                    <h3>Alimentação</h3>
+                    <p>
+                        Lanchonetes, restaurantes,
+                        marmitas e delivery.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img class="imgs"src="lavcar.jpeg" alt="">
+                    <h3>Automóveis</h3>
+                    <p>
+                        Lavagem, manutenção e
+                        estética automotiva.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img class="imgs"src="informa.jpeg" alt="">
+                    <h3>Tecnologia</h3>
+                    <p>
+                        Informática, assistência
+                        técnica e serviços digitais.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img class="imgs"src="domes.jpeg" alt="">
+                    <h3>Serviços domésticos</h3>
+                    <p>
+                        Limpeza, jardinagem e
+                        manutenção residencial.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pesquisa" id="contato">
+
+            <h2>O que está faltando em Capanema?</h2>
+
+            <p>
+                Participe da pesquisa e conte o que você gostaria
+                de encontrar na cidade.
+            </p>
+
+            <form id="formulario">
+
+                <input type="text"
+                    placeholder="Seu nome"
+                    required>
+
+                <input type="email"
+                    placeholder="Seu e-mail"
+                    required>
+
+                <select required>
+                    <option value="">Escolha uma categoria</option>
+                    <option>Alimentação</option>
+                    <option>Comércio</option>
+                    <option>Saúde</option>
+                    <option>Transporte</option>
+                    <option>Tecnologia</option>
+                    <option>Outros</option>
+                </select>
+
+                <textarea
+                    placeholder="Conte sua sugestão..."
+                    rows="4"
+                    required></textarea>
+
+                <button type="submit">Enviar pesquisa</button>
+
+                <p id="resultado"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <h3>Capanema em Foco</h3>
+        <p>Desenvolvimento e oportunidades para nossa cidade.</p>
+        <p>© 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById("formulario")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("resultado").textContent =
+                "Obrigado! Sua participação foi recebida nesta demonstração.";
+
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

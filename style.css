@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #333;
+}
+
+.topo {
+    background-color: #123c30;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #76d7a5;
+}
+
+.banner {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background:#a8d8bc;
+}
+
+.banner-conteudo {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner h2 {
+    font-size: 38px;
+    color: #123c30;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.botao {
+    background-color: #205c46;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #123c30;
+}
+
+.sobre {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.sobre p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.oportunidades {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 20px;
+}
+
+.card h3 {
+    color: #205c46;
+}
+
+.imgs {
+    width: 300px;
+    height: 200px;
+}
+
+
+.pesquisa {
+    background-color: #e5f1e9;
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.pesquisa h2 {
+    color: #123c30;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.pesquisa > p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+#formulario {
+    background-color: white;
+    max-width: 550px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#formulario textarea {
+    resize: vertical;
+}
+
+#formulario button {
+    background-color: #205c46;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#formulario button:hover {
+    background-color: #123c30;
+}
+
+#resultado {
+    color: #205c46;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.rodape {
+    background-color: #123c30;
+    color: white;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
